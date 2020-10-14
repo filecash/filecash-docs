@@ -44,16 +44,12 @@ export default {
           path: '/get-started',
           children: [
             {
-              title: 'What is Filecoin?',
-              path: '/about-filecoin/what-is-filecoin'
+              title: 'What is Filecash?',
+              path: '/about-filecash/what-is-filecash'
             },
             {
-              title: 'How Filecoin Works',
-              path: '/about-filecoin/how-filecoin-works'
-            },
-            {
-              title: 'Filecoin networks',
-              path: 'https://networks.filecoin.io'
+              title: 'How Filecash Works',
+              path: '/about-filecash/how-filecash-works'
             },
             {
               title: 'Lotus installation and setup',
@@ -64,8 +60,8 @@ export default {
               path: '/get-started/lotus/send-and-receive-fil'
             },
             {
-              title: 'Filecoin FAQ',
-              path: '/about-filecoin/faq'
+              title: 'Filecash FAQ',
+              path: '/about-filecash/faq'
             },
             {
               title: 'Glossary',
@@ -139,8 +135,8 @@ export default {
               path: '/build/onboard-testnet'
             },
             {
-              title: 'Filecoin-backed pinning services',
-              path: '/build/filecoin-pinning-services'
+              title: 'Filecash-backed pinning services',
+              path: '/build/filecash-pinning-services'
             },
             {
               title: 'Lotus guides for builders',
@@ -155,7 +151,7 @@ export default {
               path: '/build/examples'
             },
             {
-              title: 'Filecoin community resources',
+              title: 'Filecash community resources',
               path:
                 'https://github.com/filecoin-project/docs/wiki#community-resources'
             },

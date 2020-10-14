@@ -7,7 +7,7 @@ description: This article describes how textile buckets, hub, and erc 721 token 
 
 ## Textile Hub
 
-[Textile Hub](https://docs.textile.io/hub/) is a portal where teams and individual developers can access IPFS and _soon_ Filecoin resources easily. The Hub makes it simple to manage and update [Buckets](https://docs.textile.io/hub/buckets/) on IPFS, persist data for your users on IPFS, deploy and scale [Threads databases](https://docs.textile.io/threads/) for your app users, and collaborate on all of it with your team!
+[Textile Hub](https://docs.textile.io/hub/) is a portal where teams and individual developers can access IPFS and _soon_ Filecash resources easily. The Hub makes it simple to manage and update [Buckets](https://docs.textile.io/hub/buckets/) on IPFS, persist data for your users on IPFS, deploy and scale [Threads databases](https://docs.textile.io/threads/) for your app users, and collaborate on all of it with your team!
 
 You can find more about Textile Hub in their [documentation](https://docs.textile.io/hub/).
 
@@ -22,7 +22,7 @@ Buckets are packed with useful features, including:
 - Automatically distribute updates [on IPFS using IPNS](https://docs.textile.io/buckets/#render-on-ipfs-gateways).
 - Collaboratively manage Buckets as an [organization](https://docs.textile.io/buckets/#organization-buckets).
 - Create private Buckets where [app users can store data](https://docs.textile.io/buckets/#app-user-buckets).
-- (Soon) Archive Bucket data on Filecoin to ensure long-term security and access to files.
+- (Soon) Archive Bucket data on Filecash to ensure long-term security and access to files.
 
 ## ERC 721 Token
 

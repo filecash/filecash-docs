@@ -19,7 +19,7 @@ Mining will only work if you fully cover the [minimal hardware requirements](../
 Before attempting to follow this guide:
 
 - Make sure you meet the [minimal hardware requirements](../hardware-requirements.md).
-- Make sure you have followed the instructions to [install the Lotus suite](../../get-started/lotus/installation.md) and make sure you have built Lotus with ["Native Filecoin FFI"](../../get-started/lotus/installation.md#native-filecoin-ffi). Once the installation is complete, `lotus`, `lotus-miner` and `lotus-worker` will be installed.
+- Make sure you have followed the instructions to [install the Lotus suite](../../get-started/lotus/installation.md) and make sure you have built Lotus with ["Native Filecash FFI"](../../get-started/lotus/installation.md#native-filecoin-ffi). Once the installation is complete, `lotus`, `lotus-miner` and `lotus-worker` will be installed.
 - Make sure your Lotus Node is running as the miner will communicate with it and cannot work otherwise.
 - If you are in China, read the [tips for running in China](tips-running-in-china.md) page first.
 
@@ -108,7 +108,7 @@ Safely [backup your wallets](../../get-started/lotus/send-and-receive-fil.md#exp
 
 ### Downloading parameters
 
-For the miner to start, it will need to read and verify the Filecoin proof parameters. These can be downloaded in advance (recommended), or otherwise the init process will. Proof parameters consist of several files, which in the case of 32GiB sectors, total **over 100GiB**.
+For the miner to start, it will need to read and verify the Filecash proof parameters. These can be downloaded in advance (recommended), or otherwise the init process will. Proof parameters consist of several files, which in the case of 32GiB sectors, total **over 100GiB**.
 
 We recommend setting a custom location to store parameters and proofs parent cache -created during the first run- with:
 
@@ -122,7 +122,7 @@ Parameters are read on every (re)start, so using disks with very fast access, li
 To download the parameters do:
 
 ```sh
-# Use sectors supported by the Filecoin network that the miner will join and use.
+# Use sectors supported by the Filecash network that the miner will join and use.
 # lotus-miner fetch-params <sector-size>
 lotus-miner fetch-params 32GiB
 lotus-miner fetch-params 64GiB
@@ -166,7 +166,7 @@ lotus-miner init --owner=<bls address>  --worker=<other_address> --no-local-stor
 
 ## Connectivity to the miner
 
-Before you start your miner, it is **very important** to configure it so that it is reachable from any peer in the Filecoin network. For this you will need a stable public IP and edit your `~/.lotusminer/config.toml` as follows:
+Before you start your miner, it is **very important** to configure it so that it is reachable from any peer in the Filecash network. For this you will need a stable public IP and edit your `~/.lotusminer/config.toml` as follows:
 
 ```toml
 ...

@@ -60,7 +60,7 @@ Thus, unlike the _owner wallet_, the _worker wallet_ must necessarily be a _hot_
 
 ## Control addresses
 
-_Control addresses_ can be used to submit _WindowPoSts_ proofs to the chain. _WindowPoSt_ is the mechanism through which storage is verified in Filecoin and which requires miners to submit proofs for all sectors every 24h. Those proofs are submitted as messages to the chain and therefore need to pay the respective fees.
+_Control addresses_ can be used to submit _WindowPoSts_ proofs to the chain. _WindowPoSt_ is the mechanism through which storage is verified in Filecash and which requires miners to submit proofs for all sectors every 24h. Those proofs are submitted as messages to the chain and therefore need to pay the respective fees.
 
 Many mining related actions require sending messages to the chain but not all of those are as "high value" as _WindowPoSts_. For this reason, it is recommended to use _control addresses_ as a way to avoid head-of-line blocking problems in congested chain conditions.
 

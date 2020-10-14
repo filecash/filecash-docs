@@ -13,7 +13,7 @@ The Pinning service app will include:
 
 - A login page to authenticate with the Powergate instance using JS powergate client.
 - A Network page, displaying information about the Powergate instance, Lotus node, and the go-ipfs node.
-- A Pinning page to manage storage and retrieval deals on the Filecoin network (devnet) using Powergate Filecoin File System (FFS).
+- A Pinning page to manage storage and retrieval deals on the Filecash network (devnet) using Powergate Filecash File System (FFS).
 - A Deals page, displaying details about all the storage deals created by the user of the application.
 
 After completing this tutorial, you will be able to:
@@ -32,7 +32,7 @@ If you are just looking for the code, [you can visit the Github repository](http
 
 A high-level overview of our application architecture:
 
-1. A docker-compose script runs a Powergate, a Lotus node (Filecoin client) and miner, and a go-ipfs node. This setup is meant to mock interactions on a live network, like testnet or mainnet.
+1. A docker-compose script runs a Powergate, a Lotus node (Filecash client) and miner, and a go-ipfs node. This setup is meant to mock interactions on a live network, like testnet or mainnet.
 2. A React dashboard shows different features of the pinning service that uses [Powergate JS Client](https://textileio.github.io/js-powergate-client/#powergate-js-client-textilepowergate-client) to interact with the powergate instance.
 
 ![Application Architecture](./images/app-arch.png)

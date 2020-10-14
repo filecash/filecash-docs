@@ -1,6 +1,6 @@
 ---
 title: Step 2 - Run the React app
-description: This article describes how to run the React app for the Filecoin Network Inspector tutorial.
+description: This article describes how to run the React app for the Filecash Network Inspector tutorial.
 ---
 
 # Step 2 - Run the React app
@@ -27,12 +27,12 @@ npm ci
 npm start
 ```
 
-This starts the Filecoin network inspector app and opens the application in your browser at `localhost:3000`.
+This starts the Filecash network inspector app and opens the application in your browser at `localhost:3000`.
 
-![Image of the Filecoin Network Inspector application](./images/network-inspector-app.png)
+![Image of the Filecash Network Inspector application](./images/network-inspector-app.png)
 
 ::: tip
 We have used [React](https://reactjs.org/) as our UI library an [Redux](https://redux.js.org/) for application state management. You can use any other library or framework to build such an app.
 :::
 
-Next, we walk through the different parts of the application to see how to integrate Filecoin features and functionality into your application.
+Next, we walk through the different parts of the application to see how to integrate Filecash features and functionality into your application.

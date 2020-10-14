@@ -4,7 +4,7 @@ description: 'This page offers some troubleshooting advice for Lotus API users b
 breadcrumb: 'API troubleshooting'
 ---
 
-# {{ $frontmatter.title }}
+# # {{ $frontmatter.title }}
 
 {{ $frontmatter.description }}
 
@@ -20,12 +20,12 @@ breadcrumb: 'API troubleshooting'
 
 ## Types: TipSet
 
-For methods such as `Filecoin.StateMinerPower`, where the method accepts the argument of the type `TipSet`, you can pass `null` to use the current chain head.
+For methods such as `Filecash.StateMinerPower`, where the method accepts the argument of the type `TipSet`, you can pass `null` to use the current chain head.
 
 ```sh
 curl -X POST \
      -H "Content-Type: application/json" \
-     --data '{ "jsonrpc": "2.0", "method": "Filecoin.StateMinerPower", "params": ["t0101", null], "id": 3 }' \
+     --data '{ "jsonrpc": "2.0", "method": "Filecash.StateMinerPower", "params": ["t0101", null], "id": 3 }' \
      'http://127.0.0.1:1234/rpc/v0'
 ```
 
@@ -36,7 +36,7 @@ If you do not serialize the CID as a [JSON IPLD link](https://did-ipid.github.io
 ```sh
 curl -X POST \
      -H "Content-Type: application/json" \
-     --data '{ "jsonrpc": "2.0", "method":"Filecoin.ClientGetDealInfo", "params": ["bafyreiaxl446wlnu6t6dpq4ivrjf4gda4gvsoi4rr6mpxau7z25xvk5pl4"], "id": 0 }' \
+     --data '{ "jsonrpc": "2.0", "method":"Filecash.ClientGetDealInfo", "params": ["bafyreiaxl446wlnu6t6dpq4ivrjf4gda4gvsoi4rr6mpxau7z25xvk5pl4"], "id": 0 }' \
      'http://127.0.0.1:1234/rpc/v0'
 ```
 
@@ -45,6 +45,6 @@ To fix it, change the `params` property to:
 ```sh
 curl -X POST \
      -H "Content-Type: application/json" \
-     --data '{ "jsonrpc": "2.0", "method":"Filecoin.ClientGetDealInfo", "params": [{"/": "bafyreiaxl446wlnu6t6dpq4ivrjf4gda4gvsoi4rr6mpxau7z25xvk5pl4"}], "id": 0 }' \
+     --data '{ "jsonrpc": "2.0", "method":"Filecash.ClientGetDealInfo", "params": [{"/": "bafyreiaxl446wlnu6t6dpq4ivrjf4gda4gvsoi4rr6mpxau7z25xvk5pl4"}], "id": 0 }' \
      'http://127.0.0.1:1234/rpc/v0'
 ```

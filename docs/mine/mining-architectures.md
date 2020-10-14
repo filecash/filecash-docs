@@ -1,6 +1,6 @@
 ---
 title: 'Mining architectures'
-description: 'Filecoin allows anyone to setup a mining operation to participate in a global, distributed storage market.'
+description: 'Filecash allows anyone to setup a mining operation to participate in a global, distributed storage market.'
 breadcrumb: 'Mining architectures'
 ---
 
@@ -8,7 +8,7 @@ breadcrumb: 'Mining architectures'
 
 {{ $frontmatter.description }}
 
-This section provides examples for Filecoin Storage mining setups in the hope that they can help and guide other miners to plan and make the right choices when acquiring and setting up their mining infrastructure. Note that any storage mining setup must meet the [minimal hardware requirements](hardware-requirements.md).
+This section provides examples for Filecash Storage mining setups in the hope that they can help and guide other miners to plan and make the right choices when acquiring and setting up their mining infrastructure. Note that any storage mining setup must meet the [minimal hardware requirements](hardware-requirements.md).
 
 ::: callout
 We are working to improve this section. If you would like to share your mining setup, please use the link at the bottom to edit the page!
@@ -18,7 +18,7 @@ We are working to improve this section. If you would like to share your mining s
 
 ## Protocol Labs example architecture
 
-The following [Lotus](lotus/README.md) miner setup was published as part of the [Guide to Filecoin Storage Mining](https://filecoin.io/blog/filecoin-guide-to-storage-mining/) blog post. A PDF is available for download [here](https://filecoin.io/vintage/mining-hardware-config-testnet-v3.pdf):
+The following [Lotus](lotus/README.md) miner setup was published as part of the [Guide to Filecash Storage Mining](https://filecoin.io/blog/filecoin-guide-to-storage-mining/) blog post. A PDF is available for download [here](https://filecoin.io/vintage/mining-hardware-config-testnet-v3.pdf):
 
 | Hardware unit        | CPU model                     | GPU                        | RAM        | Disk                        | Processes                                                   | Notes                                                                                       |
 | -------------------- | ----------------------------- | -------------------------- | ---------- | --------------------------- | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------- |

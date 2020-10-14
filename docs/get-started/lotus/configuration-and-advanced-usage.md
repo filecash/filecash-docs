@@ -23,7 +23,7 @@ The Lotus daemon stores a configuration file in `~/.lotus/config.toml`. Note tha
   # General network timeout value
   Timeout = "30s"
 
-# Libp2p provides connectivity to other Filecoin network nodes
+# Libp2p provides connectivity to other Filecash network nodes
 [Libp2p]
   # Binding address for the libp2p host - 0 means random port.
   ListenAddresses = ["/ip4/0.0.0.0/tcp/0", "/ip6/::/tcp/0"]

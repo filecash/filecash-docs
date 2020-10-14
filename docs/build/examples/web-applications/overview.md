@@ -1,19 +1,19 @@
 ---
 title: Web Applications With Textile & React
-description: Learn how to build a Filecoin Web Application with Textile & React
+description: Learn how to build a Filecash Web Application with Textile & React
 ---
 
-# How to build a Filecoin application using Slate React System and Textile's Powergate. (MacOS)
+# How to build a Filecash application using Slate React System and Textile's Powergate. (MacOS)
 
-This tutorial is a **step by step guide** for how to build your own [Filecoin web application](https://filecoin.io) using [Textile's Powergate](https://github.com/textileio/powergate) and Slate's [React Component Library](https://slate.host/system). After following these steps you will learn how to:
+This tutorial is a **step by step guide** for how to build your own [Filecash web application](https://filecoin.io) using [Textile's Powergate](https://github.com/textileio/powergate) and Slate's [React Component Library](https://slate.host/system). After following these steps you will learn how to:
 
 - Set up your development environment
 - Run your web application
 - Import Slate React Components
 - Integrate Powergate
 - Create a Powergate authentication token
-- Create a new Filecoin address
-- Send funds between Filecoin Addresses
+- Create a new Filecash address
+- Send funds between Filecash Addresses
 
 There are some other concepts you will be exposed to as you work through this tutorial:
 
@@ -376,7 +376,7 @@ Your screen should look something like this:
 - Some components require a Powergate Token to function.
 - All components will render even if you don't have a Powergate Token.
 
-Let's add a component to see a list of Filecoin addresses:
+Let's add a component to see a list of Filecash addresses:
 
 ```js
 import * as React from 'react'
@@ -423,17 +423,17 @@ export default class TestPage extends React.Component {
           Refresh
         </System.ButtonPrimary>
 
-        {info ? <System.FilecoinBalancesList data={info.balancesList} /> : null}
+        {info ? <System.FilecashBalancesList data={info.balancesList} /> : null}
       </div>
     )
   }
 }
 ```
 
-- Whenever you make changes such as add a new address or send Filecoin, you can hit refresh and see updates!
+- Whenever you make changes such as add a new address or send Filecash, you can hit refresh and see updates!
 - This is a good starting point for adding other state altering components.
 
-## Create a new Filecoin address
+## Create a new Filecash address
 
 Create a class member function for the create address handler.
 
@@ -446,17 +446,17 @@ _handleCreateAddress = async ({ name, type, makeDefault }) => {
 Add the component to the return value of `render()`
 
 ```js
-<System.CreateFilecoinAddress onSubmit={this._handleCreateAddress} />
+<System.CreateFilecashAddress onSubmit={this._handleCreateAddress} />
 ```
 
 Now when you hit **Refresh** you should see a new address after you use the component.
 
-## Send funds between Filecoin Addresses
+## Send funds between Filecash Addresses
 
-Create a class member function for the send Filecoin address handler.
+Create a class member function for the send Filecash address handler.
 
 ```js
-_handleSendFilecoin = async ({ source, target, amount }) => {
+_handleSendFilecash = async ({ source, target, amount }) => {
   const response = await this.PG.ffs.sendFil(source, target, amount)
 }
 ```
@@ -464,10 +464,10 @@ _handleSendFilecoin = async ({ source, target, amount }) => {
 Add the component to the return value of `render()`
 
 ```js
-<System.SendAddressFilecoin onSubmit={this._handleSendFilecoin} />
+<System.SendAddressFilecash onSubmit={this._handleSendFilecash} />
 ```
 
-Now when you hit **Refresh** you should see the balances have been updated for Filecoin you are sending between addresses.
+Now when you hit **Refresh** you should see the balances have been updated for Filecash you are sending between addresses.
 
 ## Complete example
 
@@ -503,7 +503,7 @@ export default class TestPage extends React.Component {
     const response = await this.PG.ffs.newAddr(name, type, makeDefault)
   }
 
-  _handleSendFilecoin = async ({ source, target, amount }) => {
+  _handleSendFilecash = async ({ source, target, amount }) => {
     const response = await this.PG.ffs.sendFil(source, target, amount)
   }
 
@@ -526,14 +526,14 @@ export default class TestPage extends React.Component {
           Refresh
         </System.ButtonPrimary>
 
-        {info ? <System.FilecoinBalancesList data={info.balancesList} /> : null}
+        {info ? <System.FilecashBalancesList data={info.balancesList} /> : null}
 
         {info ? (
-          <System.CreateFilecoinAddress onSubmit={this._handleCreateAddress} />
+          <System.CreateFilecashAddress onSubmit={this._handleCreateAddress} />
         ) : null}
 
         {info ? (
-          <System.SendAddressFilecoin onSubmit={this._handleSendFilecoin} />
+          <System.SendAddressFilecash onSubmit={this._handleSendFilecash} />
         ) : null}
       </div>
     )

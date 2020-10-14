@@ -1,10 +1,10 @@
 ---
 title: Chat & discussion forums
-description: Connect with the Filecoin community in dicussion forums or on IRC
+description: Connect with the Filecash community in dicussion forums or on IRC
 ---
 # Chat & Discussion Forums
 
-The Filecoin community is active and here to answer your questions in your channel of choice.
+The Filecash community is active and here to answer your questions in your channel of choice.
 
 ## Chat (Slack or Matrix)
 

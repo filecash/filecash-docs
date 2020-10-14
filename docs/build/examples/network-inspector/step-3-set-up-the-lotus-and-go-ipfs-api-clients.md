@@ -15,22 +15,22 @@ Use any text editor to open the `filecoin-network-inspector` project. Multiple p
 
 1. To connect the React app to the running lotus instance, install the following three JavaScript modules using the [node package manager](http://npmjs.com/):
 
-- [@filecoin-shipyard/lotus-client-rpc](https://www.npmjs.com/package/@filecoin-shipyard/lotus-client-rpc): A low-level interface for making calls to the lotus JSON-RPC API.
-- [@filecoin-shipyard/lotus-client-provider-browser](https://www.npmjs.com/package/@filecoin-shipyard/lotus-client-provider-browser): An implementation of the lotus JS Client provider interface that connects to a lotus JSON-RPC API endpoint using WebSockets or HTTP.
-- [@filecoin-shipyard/lotus-client-schema](https://www.npmjs.com/package/@filecoin-shipyard/lotus-client-schema): Package of .js files that describe methods exported by the lotus JSON-RPC API.
+- [@filecash-shipyard/lotus-client-rpc](https://www.npmjs.com/package/@filecash-shipyard/lotus-client-rpc): A low-level interface for making calls to the lotus JSON-RPC API.
+- [@filecash-shipyard/lotus-client-provider-browser](https://www.npmjs.com/package/@filecash-shipyard/lotus-client-provider-browser): An implementation of the lotus JS Client provider interface that connects to a lotus JSON-RPC API endpoint using WebSockets or HTTP.
+- [@filecash-shipyard/lotus-client-schema](https://www.npmjs.com/package/@filecash-shipyard/lotus-client-schema): Package of .js files that describe methods exported by the lotus JSON-RPC API.
 
 In your terminal, run the following commands:
 
 ```bash
-npm i @filecoin-shipyard/lotus-client-rpc @filecoin-shipyard/lotus-client-provider-browser @filecoin-shipyard/lotus-client-schema
+npm i @filecash-shipyard/lotus-client-rpc @filecash-shipyard/lotus-client-provider-browser @filecash-shipyard/lotus-client-schema
 ```
 
 2. In [src/utils/lotus.js](https://github.com/filecoin-shipyard/filecoin-network-inspector/blob/local/src/utils/lotus.js), you can see how we use the above 3 libraries to create a lotus client for use anywhere in the application.
 
 ```js
-import { LotusRPC } from '@filecoin-shipyard/lotus-client-rpc'
-import { BrowserProvider } from '@filecoin-shipyard/lotus-client-provider-browser'
-import { testnet } from '@filecoin-shipyard/lotus-client-schema'
+import { LotusRPC } from '@filecash-shipyard/lotus-client-rpc'
+import { BrowserProvider } from '@filecash-shipyard/lotus-client-provider-browser'
+import { testnet } from '@filecash-shipyard/lotus-client-schema'
 
 export const getClient = (options = { nodeOrMiner: 'node', nodeNumber: 0 }) => {
   // API endpoint for local Lotus devnet

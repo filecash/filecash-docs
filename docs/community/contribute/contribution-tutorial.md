@@ -1,13 +1,13 @@
 ---
 title: Contribution tutorial
-description: Contribute to Filecoin documentation by finding issues, fixing them, and submitting them to the project.
+description: Contribute to Filecash documentation by finding issues, fixing them, and submitting them to the project.
 ---
 
 # Contribution tutorial
 
-While the [grammar, formatting, and style](./grammar-formatting-and-style.md) and the [writing guide](./writing-guide.md) can both help you write excellent content for the Filecoin Docs project, they don't delve into how you can actually submit you content changes. This guide will walk you through finding an issue, fixing it, and then submitting your fix to the `filecoin-project/filecoin-docs` project.
+While the [grammar, formatting, and style](./grammar-formatting-and-style.md) and the [writing guide](./writing-guide.md) can both help you write excellent content for the Filecash Docs project, they don't delve into how you can actually submit you content changes. This guide will walk you through finding an issue, fixing it, and then submitting your fix to the `filecoin-project/filecoin-docs` project.
 
-There are plenty of small-sized issues around Filecoin documentation that make for easy, helpful contributions to the Filecoin project. Here, we'll walk through:
+There are plenty of small-sized issues around Filecash documentation that make for easy, helpful contributions to the Filecash project. Here, we'll walk through:
 
 1. Finding an issue.
 2. Discussing the issue.
@@ -16,17 +16,17 @@ There are plenty of small-sized issues around Filecoin documentation that make f
 5. Waiting for a review.
 6. Merging your fix.
 
-This may look like a lot of steps for a small issue fix, but they're all necessary to make sure we keep the docs in this project up to standard. Plus, you're not on your own — half these steps can be completed by Filecoin docs project maintainers!
+This may look like a lot of steps for a small issue fix, but they're all necessary to make sure we keep the docs in this project up to standard. Plus, you're not on your own — half these steps can be completed by Filecash docs project maintainers!
 
 ## Finding an issue
 
-The Filecoin project is hosted in GitHub. There's a bunch of reasons for this, one of them being that GitHub comes with an issue tracker, which enables the core Filecoin team to field problems from the community. All community issues can read the docs, find issues, and raise issues in the docs repository (called a _repo_ for short).
+The Filecash project is hosted in GitHub. There's a bunch of reasons for this, one of them being that GitHub comes with an issue tracker, which enables the core Filecash team to field problems from the community. All community issues can read the docs, find issues, and raise issues in the docs repository (called a _repo_ for short).
 
-All issues involving the Filecoin docs themselves can be found here in the `filecoin-project/filecoin-docs` repo under the [**Issues** tab](https://github.com/filecoin-project/filecoin-docs/issues/). Here you can see all the issues that are currently open. We try to tag each issue with relevant descriptive tags. Tags like _difficulty_ and _size_ can give a sense of the amount of effort a task will take to complete.
+All issues involving the Filecash docs themselves can be found here in the `filecoin-project/filecoin-docs` repo under the [**Issues** tab](http://git.pocyc.com/CST/filecash-docs/issues/). Here you can see all the issues that are currently open. We try to tag each issue with relevant descriptive tags. Tags like _difficulty_ and _size_ can give a sense of the amount of effort a task will take to complete.
 
 Let's jump into finding an issue.
 
-1. Go to the Filecoin Docs repository at [github.com/filecoin-project/filecoin-docs](https://github.com/filecoin-project/filecoin-docs).
+1. Go to the Filecash Docs repository at [git.pocyc.com/CST/filecash-docs](http://git.pocyc.com/CST/filecash-docs).
 2. Select the **Issues** tab.
 3. Click the **Label** dropdown and select the **help wanted** tag.
 4. Select an issue that interests you.
@@ -45,7 +45,7 @@ Let's add to the discussion of the issue you've chosen:
 2. Add any comments you feel are necessary.
 3. If you still want to tackle this issue, post a message saying that you'd like to take ownership of it.
 
-Once you've claimed ownership of an issue, a project maintainer will assign you to it. If this is a large issue, someone from the Filecoin team will check in with you from time to time and make sure you've got everything you need to progress with the issue.
+Once you've claimed ownership of an issue, a project maintainer will assign you to it. If this is a large issue, someone from the Filecash team will check in with you from time to time and make sure you've got everything you need to progress with the issue.
 
 ## Creating a fix
 
@@ -57,9 +57,9 @@ If you've got this far, then you should have an issue in hand and a basic idea o
 
 A _fork_ of a project is your own personal copy of that project. You can make as many changes to this copy whenever you want, because you own it. The idea is that you can modify this personal copy and send your changes to the project team, who can then review all the work you've done.
 
-Here is the process for creating a fork of an existing piece of Filecoin documentation:
+Here is the process for creating a fork of an existing piece of Filecash documentation:
 
-1. Go to the `filecoin-project/filecoin-docs` repository in [GitHub](https://github.com/filecoin-project/filecoin-docs).
+1. Go to the `filecoin-project/filecoin-docs` repository in [GitHub](http://git.pocyc.com/CST/filecash-docs).
 2. Select **Fork** to create a copy of the project.
 3. Clone your copy of the project down to your local machine:
 
@@ -82,7 +82,7 @@ When adding a commit comment that actively fixes an issue within the project, tr
 
 Once you're done making commits, and are ready to get a core team member's review of your work, it's time to create a pull request.
 
-1. Go to the `filecoin-project/filecoin-docs` repository on [GitHub](https://github.com/filecoin-project/filecoin-docs).
+1. Go to the `filecoin-project/filecoin-docs` repository on [GitHub](http://git.pocyc.com/CST/filecash-docs).
 2. Select the **Pull requests** tab.
 3. Click **New pull request**.
 4. Click **compare across forks** and select your repository from the **head repository** dropdown.
@@ -101,4 +101,4 @@ Once your pull request has been approved, a project member with the correct righ
 
 ## Finishing up
 
-So there you have it! You've successfully completed your first contribution to the Filecoin documentation. We're always on the lookout for great writers and educators to help us improve the Filecoin docs and make the internet better for everyone, so keep up the good work!
+So there you have it! You've successfully completed your first contribution to the Filecash documentation. We're always on the lookout for great writers and educators to help us improve the Filecash docs and make the internet better for everyone, so keep up the good work!

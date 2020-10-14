@@ -1,12 +1,12 @@
 ---
-title: Filecoin Mining
-description: Miners in the Filecoin network are in charge of storing, providing content and issuing new blocks.
+title: Filecash Mining
+description: Miners in the Filecash network are in charge of storing, providing content and issuing new blocks.
 breadcrumb: Mine
 ---
 
 # Mine
 
-Welcome to the Filecoin documentation for **Miners**.
+Welcome to the Filecash documentation for **Miners**.
 
 {{ $frontmatter.description }} Content in this section will help you to:
 
@@ -15,8 +15,8 @@ Welcome to the Filecoin documentation for **Miners**.
 - Learn about different [mining architectures](mining-architectures.md).
 - Setup and run a high performant [Lotus Miner](lotus/README.md).
 
-The documentation you will be reading assumes you are familiar with the documentation in the [Get started](../get-started) section, have a general grasp of how Filecoin works and are familiar with Filecoin node software and tooling.
+The documentation you will be reading assumes you are familiar with the documentation in the [Get started](../get-started) section, have a general grasp of how Filecash works and are familiar with Filecash node software and tooling.
 
 :::warning
-Running a successful mining operation on Filecoin has high [hardware requirements](hardware-requirements.md) and, apart from a strong familiarity with Filecoin, requires experience in systems deployment and administration.
+Running a successful mining operation on Filecash has high [hardware requirements](hardware-requirements.md) and, apart from a strong familiarity with Filecash, requires experience in systems deployment and administration.
 :::

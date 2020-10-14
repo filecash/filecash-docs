@@ -1,6 +1,6 @@
 ---
 title: 'Lotus: Use Go with JSON-RPC APIs'
-description: "This is a guide on how to use the Filecoin Project's json-rpc library to power a Go client to interact with the Lotus API."
+description: "This is a guide on how to use the Filecash Project's json-rpc library to power a Go client to interact with the Lotus API."
 breadcrumb: 'Use Go with JSON-RPC APIs'
 ---
 
@@ -44,7 +44,7 @@ func main() {
 	addr := "127.0.0.1:1234"
 
 	var api apistruct.FullNodeStruct
-	closer, err := jsonrpc.NewMergeClient(context.Background(), "ws://"+addr+"/rpc/v0", "Filecoin", []interface{}{&api.Internal, &api.CommonStruct.Internal}, headers)
+	closer, err := jsonrpc.NewMergeClient(context.Background(), "ws://"+addr+"/rpc/v0", "Filecash", []interface{}{&api.Internal, &api.CommonStruct.Internal}, headers)
 	if err != nil {
 		log.Fatalf("connecting with lotus failed: %s", err)
 	}

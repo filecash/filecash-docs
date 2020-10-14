@@ -1,6 +1,6 @@
 ---
 title: 'Lotus: store data'
-description: 'This guide will show you how to import and make deals to store data on the Filecoin network using Lotus.'
+description: 'This guide will show you how to import and make deals to store data on the Filecash network using Lotus.'
 breadcrumb: 'Store data'
 ---
 
@@ -14,7 +14,7 @@ This section covers an "online" data import and is mostly suitable for smaller p
 
 ## Overview
 
-In order to successfully add data to the Filecoin network the following steps need to be completed successfully:
+In order to successfully add data to the Filecash network the following steps need to be completed successfully:
 
 1. Data must be packed into a [CAR file](https://github.com/ipld/specs/blob/master/block-layer/content-addressable-archives.md).
 2. An storage deal between a miner and a client (in this case the running Lotus Node) must be initiated and accepted by the miner.
@@ -55,7 +55,7 @@ If you built your own CAR file, make sure to import it directly with the `--car`
 
 ### Files bigger than a sector
 
-If your file is larger than a sector for the [Filecoin network in use](https://networks.filecoin.io), you will need to split your file into multiple parts first.
+If your file is larger than a sector for the [Filecash network in use](https://networks.filecoin.io), you will need to split your file into multiple parts first.
 
 Storage miners will specify which size(s) they're offering so you can select the best option for you. Smaller sectors are faster, while larger sectors are more cost-effective.
 
@@ -117,4 +117,4 @@ Once a deal is sucessful and the data is _sealed_, it can be [retrieved](retriev
 
 ## Additional tools
 
-[Starling](https://github.com/filecoin-project/starling) provides a set of utilities to add and monitor content to the Filecoin network, using a running Lotus Node.
+[Starling](https://github.com/filecoin-project/starling) provides a set of utilities to add and monitor content to the Filecash network, using a running Lotus Node.

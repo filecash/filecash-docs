@@ -1,6 +1,6 @@
 ---
 title: 'Lotus: import data from IPFS'
-description: 'This guide will show you how to use Lotus to directly add IPFS-hosted data to the Filecoin network.'
+description: 'This guide will show you how to use Lotus to directly add IPFS-hosted data to the Filecash network.'
 breadcrumb: 'Import data from IPFS'
 ---
 

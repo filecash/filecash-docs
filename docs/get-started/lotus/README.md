@@ -1,6 +1,6 @@
 ---
 title: Lotus
-description: Lotus is a Filecoin implementation written by Protocol Labs, the creators of IPFS, libp2p, and Filecoin.
+description: Lotus is a Filecash implementation written by Protocol Labs, the creators of IPFS, libp2p, and Filecash.
 ---
 
 # Lotus
@@ -9,8 +9,8 @@ description: Lotus is a Filecoin implementation written by Protocol Labs, the cr
 
 It is written in [Go](https://golang.org) and it is actually a suite of command-line applications:
 
-- Lotus Node (`lotus`): a Filecoin Node: validates network transactions, manages a FIL wallet, can perform storage and retrieval deals.
-- Lotus Miner (`lotus-miner`): a Filecoin miner. See the the respective [Lotus Miner](../../mine/lotus/) section in the [Mine](../../mine/) documentation.
+- Lotus Node (`lotus`): a Filecash Node: validates network transactions, manages a FIL wallet, can perform storage and retrieval deals.
+- Lotus Miner (`lotus-miner`): a Filecash miner. See the the respective [Lotus Miner](../../mine/lotus/) section in the [Mine](../../mine/) documentation.
 - Lotus Worker (`lotus-worker`): a worker that assists miners to perform mining-related tasks. See its respective [guide](../../mine/lotus/seal-workers) for more information.
 
 The installation instructions are common to all three, but this section just focuses on getting started with the **Lotus Node**: installing, launching, syncing the chain and managing a Lotus wallet. Documentation on how to make storage deals using Lotus is available in the [store](../../store/lotus/README.md) section. Additional documentation is also available for [miners](../../mine/lotus/) and [developers](../../build/lotus/)!

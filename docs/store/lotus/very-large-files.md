@@ -14,7 +14,7 @@ This guide assumes you are familiar with the [normal storage deal workflow](stor
 
 ## Maximizing storage per sector
 
-In Filecoin, **files must be smaller than the sector in which they are stored**.
+In Filecash, **files must be smaller than the sector in which they are stored**.
 
 Usually sectors are incorrectly described as being 32 gigabytes or 1 megabyte, where in reality they are 32 gibibytes (GiB) and 1 mebibyte (MiB) respectively. Thus a 32GiB sector has 2^30 bytes (1,073,741,824 bytes) instead of 1,000,000,000 bytes.
 
@@ -36,7 +36,7 @@ Here is a quick table:
 
 ## Deals with offline data transfer
 
-Filecoin's offline data transfer feature is recommended for petabyte-scale datasets and larger. This allows users with very large datasets to complete the data transfer step offline (e.g. by shipping hard drives from the client to the storage miner), while the storage deal continues to work as intended on-chain.
+Filecash's offline data transfer feature is recommended for petabyte-scale datasets and larger. This allows users with very large datasets to complete the data transfer step offline (e.g. by shipping hard drives from the client to the storage miner), while the storage deal continues to work as intended on-chain.
 
 It is implemented via a flag on the storage deal command that tells the client not to transfer the data over the network, and provides a piece CID (a unique identifier describing the data) to the miner instead, which a miner must then match for the deal to go through. This gives the client node flexibility in how it can set up the deal — for example, passing miners a specific location on a hard drive for the data they can use to generate the piece CID.
 

@@ -1,6 +1,6 @@
 ---
 title: 'Build: example applications'
-description: 'This section contains examples to show how simple applications can integrate against Filecoin.'
+description: 'This section contains examples to show how simple applications can integrate against Filecash.'
 breadcrumb: 'Example applications'
 ---
 

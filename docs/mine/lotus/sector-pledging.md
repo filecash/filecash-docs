@@ -10,7 +10,7 @@ breadcrumb: 'Sector pledging'
 
 ## Reasons to pledge sectors
 
-As we have [explained](../how-mining-works.md#power-and-rewards), the amount of power of a miner in the Filecoin network is directly proportional to the amount of live storage (active sectors) contributed to the network. Miners with more power have more chances to be selected to mine new blocks.
+As we have [explained](../how-mining-works.md#power-and-rewards), the amount of power of a miner in the Filecash network is directly proportional to the amount of live storage (active sectors) contributed to the network. Miners with more power have more chances to be selected to mine new blocks.
 
 By sealing sectors with random data (pledging), a miner can demonstrate to the network that it has setup and could potentially offer that much storage for real deals when there is enough demand or when it decides to do so. In the meantime, pledged sectors work similar to regular sectors and result in an increase in the miner's power.
 

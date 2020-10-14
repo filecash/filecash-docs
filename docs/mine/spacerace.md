@@ -1,5 +1,5 @@
 ---
-title: 'The Filecoin Space Race'
+title: 'The Filecash Space Race'
 description: "The testnet incentives program (also known as the 'Space Race') is a collaborative competition intended to stress-test the network, encourage participation all over the world, and help miners get ready to run the world's biggest decentralized storage network."
 breadcrumb: 'Space Race'
 ---
@@ -8,13 +8,13 @@ breadcrumb: 'Space Race'
 
 {{ $frontmatter.description }}
 
-The competition’s basic structure is simple: for three weeks, miners will compete to onboard as much storage capacity as possible to the network. The top 100 miners globally, as well as the top 50 miners from each continent, will earn Filecoin rewards based on how much storage they and the network achieve during the test period.
+The competition’s basic structure is simple: for three weeks, miners will compete to onboard as much storage capacity as possible to the network. The top 100 miners globally, as well as the top 50 miners from each continent, will earn Filecash rewards based on how much storage they and the network achieve during the test period.
 
 A miner’s “location,” for regional leaderboards, is the physical location of the mining operation. Operations split between multiple regions must run multiple miners. Miners will be required to submit documentation verifying their location claims. Claiming to be from a different location will disqualify you from rewards and leaderboard inclusion.
 
 ## How do I participate?
 
-**The competition period will begin Monday, August 24th at 22:00 UTC** and is open for 3 weeks, ending Monday, September 14th at 21:59 UTC. To participate in the competition, run 1 or more miners on the [Testnet](https://docs.filecoin.io/how-to/networks/#testnet). You can track your progress on the [Space Race Competition Dashboard](https://spacerace.filecoin.io/).
+**The competition period will begin Monday, August 24th at 22:00 UTC** and is open for 3 weeks, ending Monday, September 14th at 21:59 UTC. To participate in the competition, run 1 or more miners on the [Testnet](https://docs.file.cash/how-to/networks/#testnet). You can track your progress on the [Space Race Competition Dashboard](https://spacerace.filecoin.io/).
 
 You'll also need to complete these steps to be eligible for rewards:
 
@@ -22,7 +22,7 @@ You'll also need to complete these steps to be eligible for rewards:
 - Demonstrate at least one [sector upgrade](#how-do-i-demonstrate-a-sector-upgrade) per miner.
 - Register your miner(s) by submitting your individual or company info via the [Competition Dashboard](https://spacerace.filecoin.io/). After submitting the registration form, it will generate a message for your miner to sign and submit. Miners that qualify for rewards will also need to pass an AML/KYC check after the competition ends. [**Note:** Standard registration (for miners already mining) closed at 22:00 UTC, Monday, August 31. Late registration (for new miners not seen on chain before and who don't have another miner in the race) is open until **22:00 UTC, Thursday, Sept 10th**.]
 
-For help or additional questions, join the [#space-race](https://filecoinproject.slack.com/archives/C0179RNEMU4) channel on the [Filecoin Slack](https://filecoin.io/slack).
+For help or additional questions, join the [#space-race](https://filecoinproject.slack.com/archives/C0179RNEMU4) channel on the [Filecash Slack](https://filecoin.io/slack).
 
 ## What are the possible rewards?
 
@@ -60,7 +60,7 @@ Any rewards earned will be encoded into the genesis block and will vest linearly
 
 #### What branch and network will be used for the Space Race?
 
-The Space Race competition will run on the [Testnet](https://docs.filecoin.io/how-to/networks/#testnet) network.
+The Space Race competition will run on the [Testnet](https://docs.file.cash/how-to/networks/#testnet) network.
 
 #### Where can I get test FIL?
 
@@ -88,7 +88,7 @@ To check if your miner has finished sealing its first sector, run `lotus state a
 
 The “location” of a storage mining operation is the location of the storage and sealing hardware for the operation. Since the hardware is what matters, it is not acceptable to relay from hardware in Continent A to a Lotus node in Continent B and try to claim Continent B rewards.
 
-Thus, to verify location claims, the Filecoin team will be implementing a custom-built software suite running during the competition, and will be doing hands-on verification during and after the competition. **Please do not try to “spoof” your location – we have many layers of detection in place and a team in place to ensure fairness**; if you are thinking about using a proxy or a VPN to hide your location, think again.
+Thus, to verify location claims, the Filecash team will be implementing a custom-built software suite running during the competition, and will be doing hands-on verification during and after the competition. **Please do not try to “spoof” your location – we have many layers of detection in place and a team in place to ensure fairness**; if you are thinking about using a proxy or a VPN to hide your location, think again.
 
 Any miner found misrepresenting their location will result in a _total forfeiture of all rewards_, across all associated miners.
 
@@ -98,7 +98,7 @@ Your region is determined by the physical location of the storage and sealing ha
 
 #### Is a static IP required?
 
-A public IP is required so that your miner can make storage and retrieval deals and compete in Space Race. This can achieved through a static IP, or a relay or VPN. The majority of deal errors found during calibration period werre caused by IP address and other connectivity issues, so we highly recommend following the [Improving connectivity](https://docs.filecoin.io/mine/connectivity/) steps.
+A public IP is required so that your miner can make storage and retrieval deals and compete in Space Race. This can achieved through a static IP, or a relay or VPN. The majority of deal errors found during calibration period werre caused by IP address and other connectivity issues, so we highly recommend following the [Improving connectivity](https://docs.file.cash/mine/connectivity/) steps.
 
 #### How exactly is deal success measured?
 
@@ -112,7 +112,7 @@ Each region (regional or global) unlocks additional FIL rewards by collectively 
 
 #### Can I run multiple miners?
 
-Yes, you can combine your competition results from multiple miners within the same region. Once the competition begins, register all your miners with the same email address. Then, email mining@filecoin.io during the first week of the competition and ask for those miners to be combined on the leaderboard. **The deadline for combining actors is Wednesday, September 2nd at 22:00 UTC.** The miners will be displayed together under a common name (your company name, for example) and treated as **ONE** miner for purposes of calculating rankings, average deal success rates, and rewards.
+Yes, you can combine your competition results from multiple miners within the same region. Once the competition begins, register all your miners with the same email address. Then, email mining@filecash.io during the first week of the competition and ask for those miners to be combined on the leaderboard. **The deadline for combining actors is Wednesday, September 2nd at 22:00 UTC.** The miners will be displayed together under a common name (your company name, for example) and treated as **ONE** miner for purposes of calculating rankings, average deal success rates, and rewards.
 
 #### How are rewards distributed?
 
@@ -208,7 +208,7 @@ Run `lotus-miner sectors seal <sector id>`.
 
 #### Why is my deal success rate below 80%?
 
-Deals can fail due to various reasons. To see the deal logs for your miner, go to [Space Race Dashboard](https://spacerace.filecoin.io/), search for your miner id, and click `Open Logs`. See the [Improving Connectivity > Common Errors](https://docs.filecoin.io/mine/connectivity/#common-errors) section for detailed explanations and recommended fixes for each error.
+Deals can fail due to various reasons. To see the deal logs for your miner, go to [Space Race Dashboard](https://spacerace.filecoin.io/), search for your miner id, and click `Open Logs`. See the [Improving Connectivity > Common Errors](https://docs.file.cash/mine/connectivity/#common-errors) section for detailed explanations and recommended fixes for each error.
 
 #### My sector is stuck in X stage. How can I remove it?
 
@@ -220,6 +220,6 @@ You need to seal at least one sector before starting to receive deals.
 
 ## Additional notes
 
-- If a bug is identified during the competition that threatens the validity of the power table, the Filecoin team may end the competition early. Rewards will still be awarded for the period prior to the discovery of the bug. If such a bug is responsibly disclosed to the Filecoin team, the team reporting it will be eligible for rewards of up to 250k FIL, depending on the severity and practicality of the bug, as determined by the Filecoin team.
+- If a bug is identified during the competition that threatens the validity of the power table, the Filecash team may end the competition early. Rewards will still be awarded for the period prior to the discovery of the bug. If such a bug is responsibly disclosed to the Filecash team, the team reporting it will be eligible for rewards of up to 250k FIL, depending on the severity and practicality of the bug, as determined by the Filecash team.
 
-- While we don’t expect it, in the unlikely event that Protocol Labs or the Filecoin Foundation determine in their sole discretion that legal or regulatory issues prevent the delivery of any portion of rewards, the rewards may be restructured, postponed, or cancelled.
+- While we don’t expect it, in the unlikely event that Protocol Labs or the Filecash Foundation determine in their sole discretion that legal or regulatory issues prevent the delivery of any portion of rewards, the rewards may be restructured, postponed, or cancelled.

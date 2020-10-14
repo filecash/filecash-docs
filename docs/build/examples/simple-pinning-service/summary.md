@@ -5,7 +5,7 @@ description: This article summarizes what we learned from the Simple Powergate S
 
 # Summary
 
-In this tutorial, you learned to manage data on IPFS and Filecoin using Powergate.
+In this tutorial, you learned to manage data on IPFS and Filecash using Powergate.
 
 We learned about:
 
@@ -18,6 +18,6 @@ We learned about:
 - How to configure storage options using FFS config
 - How to add data to FFS, and how to override the default FFS config for a specific CID
 - How to monitor the job and deal status of data added to FFS
-- How to fetch data from IPFS Network and Filecoin Network
+- How to fetch data from IPFS Network and Filecash Network
 
 If you're interested in diving into more of the details, visit the [Simple Pinning Service repo](https://github.com/filecoin-shipyard/powergate-pinning-service).

@@ -1,6 +1,6 @@
 ---
 title: 'Lotus: retrieve data'
-description: 'This guide will show you how to use Lotus to retreive data that has been stored on the Filecoin network.'
+description: 'This guide will show you how to use Lotus to retreive data that has been stored on the Filecash network.'
 breadcrumb: 'Retrieve data'
 ---
 
@@ -14,7 +14,7 @@ Currently, Lotus supports direct retrieval from the storage miners which origina
 
 ## Overview
 
-To retrieve data from the Filecoin network, a Lotus Node needs to:
+To retrieve data from the Filecash network, a Lotus Node needs to:
 
 1. Perform a retrieval query using the desired _Data CID_ agains the miner storing the data.
 2. Receive confirmation from the miner that it is holding that data and that it can provide it for a price.

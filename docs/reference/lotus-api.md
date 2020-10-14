@@ -63,7 +63,7 @@ Thus, `ChainHead` will translate as the following [JSON-RPC](https://www.jsonrpc
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "Filecoin.ChainHead",
+  "method": "Filecash.ChainHead",
   "params": [],
   "id": 1
 }
@@ -77,7 +77,7 @@ In order to make a cURL request we will also need an [authorization token, which
 curl -X POST \
 	 -H "Content-Type: application/json" \
 	 -H "Authorization: Bearer $(cat ~/.lotusminer/token)" \
-	 --data '{ "jsonrpc": "2.0", "method": "Filecoin.ChainHead", "params": [], "id": 1 }' \
+	 --data '{ "jsonrpc": "2.0", "method": "Filecash.ChainHead", "params": [], "id": 1 }' \
 	 'http://127.0.0.1:1234/rpc/v0'
 ```
 
@@ -88,7 +88,7 @@ Let us now make a request with parameters using the [ChainGetMessage method](htt
 ```json
 {
   "jsonrpc": "2.0",
-  "method": "Filecoin.ChainGetMessage",
+  "method": "Filecash.ChainGetMessage",
   "params": [
     { "/": "bafy2bzacedcdedrghloawlwkntdhqnknqzxgh26ddwix7ld2a5ygagco3ngee" }
   ],
@@ -104,7 +104,7 @@ The cURL request will then be:
 curl -X POST \
 	 -H "Content-Type: application/json" \
 	 -H "Authorization: Bearer $(cat ~/.lotusminer/token)" \
-	 --data '{"jsonrpc":"2.0","method":"Filecoin.ChainGetMessage","params":[{"/":"bafy2bzacedcdedrghloawlwkntdhqnknqzxgh26ddwix7ld2a5ygagco3ngee"}],"id":1}' \
+	 --data '{"jsonrpc":"2.0","method":"Filecash.ChainGetMessage","params":[{"/":"bafy2bzacedcdedrghloawlwkntdhqnknqzxgh26ddwix7ld2a5ygagco3ngee"}],"id":1}' \
 	 'http://127.0.0.1:1234/rpc/v0'
 ```
 

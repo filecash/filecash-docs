@@ -1,6 +1,6 @@
 ---
 title: Writing guide
-description: Learn the specifics of how to write documentation for the Filecoin project.
+description: Learn the specifics of how to write documentation for the Filecash project.
 ---
 
 # Writing guide
@@ -11,7 +11,7 @@ This guide explains how to write an article. While the [grammar, formatting, and
 
 The purpose of a walkthrough is to tell the user _how_ to do something. They do not need to convince the reader of something or explain a concept. Walkthroughs are a list of steps the reader must follow to achieve a process or function.
 
-The vast majority of documentation within the Filecoin Docs project falls under the _Walkthrough_ category. Walkthroughs are generally quite short, have a neutral tone, and teach the reader how to achieve a particular process or function. They present the reader with concrete steps on where to go, what to type, and things they should click on. There is little to no _conceptual_ information within walkthroughs.
+The vast majority of documentation within the Filecash Docs project falls under the _Walkthrough_ category. Walkthroughs are generally quite short, have a neutral tone, and teach the reader how to achieve a particular process or function. They present the reader with concrete steps on where to go, what to type, and things they should click on. There is little to no _conceptual_ information within walkthroughs.
 
 ### Goals
 
@@ -27,7 +27,7 @@ Use the following goals when writing walkthroughs:
 
 #### Function or process
 
-The end goal of a walkthrough is for the reader to achieve a very particular function. _Installing the Filecoin Desktop application_ is an example. Following this walkthrough isn't going to teach the reader much about working with the decentralized web or what Filecoin is. Still, by the end, they'll have the Filecoin Desktop application installed on their computer.
+The end goal of a walkthrough is for the reader to achieve a very particular function. _Installing the Filecash Desktop application_ is an example. Following this walkthrough isn't going to teach the reader much about working with the decentralized web or what Filecash is. Still, by the end, they'll have the Filecash Desktop application installed on their computer.
 
 #### Short length
 
@@ -75,9 +75,9 @@ Articles are separated into five major sections:
 
 When writing a tutorial, you're teaching a reader how to achieve a complex end-goal. Tutorials are a mix of walkthroughs and conceptual articles. Most tutorials will span several pages, and contain multiple walkthroughs within them.
 
-Take the hypothetical tutorial _Get up and running with Filecoin_, for example. This tutorial will likely have the following pages:
+Take the hypothetical tutorial _Get up and running with Filecash_, for example. This tutorial will likely have the following pages:
 
-1. A brief introduction to what Filecoin is.
+1. A brief introduction to what Filecash is.
 2. Choose and install a command line client.
 3. Understanding storage deals.
 4. Import and store a file.

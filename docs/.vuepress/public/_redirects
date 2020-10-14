@@ -1,17 +1,16 @@
 # all redirects use 301 unless otherwise specified
 
-# redirect folks who try to visit the old go-filecoin docs site previously hosted at docs.filecoin.io
+# redirect folks who try to visit the old go-filecoin docs site previously hosted at docs.file.cash
 
 /questions.html https://go.filecoin.io/questions.html
 /go-filecoin-tutorial/*  https://go.filecoin.io/go-filecoin-tutorial/:splat
-/networks/ https://networks.filecoin.io
 
 /introduction/ /
-/introduction/what-is-filecoin/ /about-filecoin/what-is-filecoin/
-/introduction/why-filecoin/ /about-filecoin/why-filecoin/
-/introduction/ipfs-and-filecoin/ /about-filecoin/ipfs-and-filecoin/
-/introduction/filecoin-compared-to/ /about-filecoin/filecoin-compared-to/
-/introduction/faq/ /about-filecoin/faq/
+/introduction/what-is-filecash/ /about-filecash/what-is-filecash/
+/introduction/why-filecash/ /about-filecash/why-filecash/
+/introduction/ipfs-and-filecash/ /about-filecash/ipfs-and-filecash/
+/introduction/filecash-compared-to/ /about-filecash/filecash-compared-to/
+/introduction/faq/ /about-filecash/faq/
 
 /how-to/install-filecoin/ /get-started/lotus/installation/
 /how-to/networks/ /networks/
@@ -42,13 +41,13 @@
 
 /build/tools/ /build/
 /build/tools/api-clients/ /build/lotus/api-client-libraries/
-/build/tools/filecoin-backed-pinning-services/ /build/filecoin-pinning-services/
+/build/tools/filecoin-backed-pinning-services/ /build/filecash-pinning-services/
 /build/tools/powergate/ /build/powergate/
 /build/tools/signing-libraries/ /build/signing-libraries/
 /build/tools/slate/ /store/#filecoin-software
 /build/tools/wallets/ /store/lotus/send-and-receive-fil/
 
-/build/core-products/filecoin-backed-pinning-services/ /build/filecoin-pinning-services/
+/build/core-products/filecoin-backed-pinning-services/ /build/filecash-pinning-services/
 /build/core-products/powergate/ /build/powergate/
 /build/core-products/protocol-implementations/ /software/
 /build/developer-tools/wallets-signing-tools-api-clients/ /build/signing-libraries/

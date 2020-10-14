@@ -1,6 +1,6 @@
 ---
 title: Lotus
-description: Lotus is a full-featured client capable of performing storage and retrieval deals on the Filecoin Network.
+description: Lotus is a full-featured client capable of performing storage and retrieval deals on the Filecash Network.
 ---
 
 # Lotus

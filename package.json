@@ -1,7 +1,7 @@
 {
   "name": "filecoin-docs",
   "version": "1.0.0",
-  "description": "Filecoin Docs platform",
+  "description": "Filecash Docs platform",
   "author": "cwaring & terichadbourne",
   "license": "MIT",
   "devDependencies": {

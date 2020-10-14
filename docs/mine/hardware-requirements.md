@@ -1,16 +1,16 @@
 ---
 title: 'Hardware requirements'
-description: 'Minimum hardware requirements for Filecoin mining.'
+description: 'Minimum hardware requirements for Filecash mining.'
 breadcrumb: 'Hardware requirements'
 ---
 
 # {{ $frontmatter.title }}
 
-The hardware requirements for Filecoin mining are tied to the computational resources needed to _seal_ a sector and generating regular _Proof of Spacetime_ for every sealed sector (_WindowPoSt_).
+The hardware requirements for Filecash mining are tied to the computational resources needed to _seal_ a sector and generating regular _Proof of Spacetime_ for every sealed sector (_WindowPoSt_).
 
-These are computationally expensive operations which depend on the sector sizes used by the [Filecoin network](https://network.filecoin.io) on which the miner is running -nerpa, testnet, mainnet etc.-. For reference, the requirements listed below correspond to **32GiB sectors**, as used by testnet and mainnet.
+These are computationally expensive operations which depend on the sector sizes used by the [Filecash network](https://network.filecoin.io) on which the miner is running -nerpa, testnet, mainnet etc.-. For reference, the requirements listed below correspond to **32GiB sectors**, as used by testnet and mainnet.
 
-Different Filecoin Miner implementations may distribute sealing tasks differently, for example, using additional workers apart from the Miner. The following are _general_ requirements assuming all the mining operations are performed by the same machine. Resources needed by each operation are detailed later below. For a concrete example of hardware type and usage, see the [mining architectures](mining-architectures.md).
+Different Filecash Miner implementations may distribute sealing tasks differently, for example, using additional workers apart from the Miner. The following are _general_ requirements assuming all the mining operations are performed by the same machine. Resources needed by each operation are detailed later below. For a concrete example of hardware type and usage, see the [mining architectures](mining-architectures.md).
 
 [[TOC]]
 
@@ -40,9 +40,9 @@ Mixing AMD and Nvidia GPUs in the same machine is known to cause issues with Ope
 
 ### Disk
 
-Performance of Miner operations can be heavily affected by slow disks. For example, a 32GiB expands to ~480GiB during the sealing process. Filecoin network parameters are over 100GiB and need to be read and verified during Miner start. As mentioned above, lack of RAM needs to be addressed with a fast swap drive or file.
+Performance of Miner operations can be heavily affected by slow disks. For example, a 32GiB expands to ~480GiB during the sealing process. Filecash network parameters are over 100GiB and need to be read and verified during Miner start. As mentioned above, lack of RAM needs to be addressed with a fast swap drive or file.
 
-For this reasons, a minimal amount of 1TiB NVMe-based disk space for cache storage is recommended. This disk should be used to store data during the sealing process, to cache Filecoin parameters and serve as general temporal storage location.
+For this reasons, a minimal amount of 1TiB NVMe-based disk space for cache storage is recommended. This disk should be used to store data during the sealing process, to cache Filecash parameters and serve as general temporal storage location.
 
 Additional hard drives for the final storage of "sealed sectors", the Lotus chain etc. will be needed as well.
 
@@ -66,4 +66,4 @@ Note that the [Lotus](lotus/README.md) implementation allows to configure and de
 
 The above requirements will not increase in the presumable future, and money spent on hardware should provide users with many years of reliable service, paying for themselves several times over.
 
-Filecoin allows to launch a small cloud storage business for a few thousand dollars directly from home, where it would cost millions in infrastructure and logistics to get off the ground in the current data hosting model.
+Filecash allows to launch a small cloud storage business for a few thousand dollars directly from home, where it would cost millions in infrastructure and logistics to get off the ground in the current data hosting model.

@@ -1,6 +1,6 @@
 // .vuepress/config.js
 
-const DEPLOY_DOMAIN = 'https://docs.filecoin.io'
+const DEPLOY_DOMAIN = 'https://docs.file.cash'
 
 module.exports = {
   base: '/',
@@ -8,8 +8,8 @@ module.exports = {
   locales: {
     '/': {
       lang: 'en-US',
-      title: 'Filecoin Docs',
-      description: 'Filecoin Documentation'
+      title: 'Filecash Docs',
+      description: 'Filecash Documentation'
     }
   },
   markdown: {
@@ -32,11 +32,11 @@ module.exports = {
       'https://docs.google.com/forms/d/1LVaD1B2uyW6Ff0jfU_iQ5mCeyQcHfyQO6BDD99XAgK0/viewform',
     defaultImage: '/images/social-card.png',
     author: {
-      name: 'Filecoin Team',
-      twitter: '@filecoin'
+      name: 'Filecash Team',
+      twitter: '@filecash'
     },
     keywords:
-      'Filecoin, crypto, mining, blockchain, IPFS, dweb, protocol, libp2p, ipld, multiformats, bitswap, decentralized web, InterPlanetary File System, dapp, documentation, docs, Protocol Labs',
+      'Filecash, crypto, mining, blockchain, IPFS, dweb, protocol, libp2p, ipld, multiformats, bitswap, decentralized web, InterPlanetary File System, dapp, documentation, docs, Protocol Labs',
     // edit links
     // repo: 'filecoin-project/filecoin-docs',
     domain: DEPLOY_DOMAIN,
@@ -51,7 +51,7 @@ module.exports = {
     nextLinks: true,
     prevLinks: true,
     // ui/ux
-    logo: '/images/filecoin-symbol-color.svg',
+    logo: '/images/filecash-symbol-color.svg',
     locales: {
       '/': {
         label: 'English',
@@ -68,6 +68,7 @@ module.exports = {
         nav: require('./nav/en'),
         sidebar: {
           //'/software/': 'auto',
+          '/networks/': 'auto',
 
           '/get-started/': [
             'explore-the-network',
@@ -147,11 +148,11 @@ module.exports = {
           ],
 
           '/build/': [
-            //'the-filecoin-ecosystem',
+            //'the-filecash-ecosystem',
             //'textile-buckets',
             ['onboard-testnet', 'Onboard to testnet'],
             'powergate',
-            ['filecoin-pinning-services', 'FPS architecture'],
+            ['filecash-pinning-services', 'FPS architecture'],
             {
               title: 'LOTUS',
               path: '/build/lotus/',
@@ -198,7 +199,7 @@ module.exports = {
                     '/build/examples/network-inspector/step-1-start-lotus-devnet-and-go-ipfs',
                     '/build/examples/network-inspector/step-2-run-the-react-app',
                     '/build/examples/network-inspector/step-3-set-up-the-lotus-and-go-ipfs-api-clients',
-                    '/build/examples/network-inspector/step-4-explore-the-filecoin-network-inspector-app',
+                    '/build/examples/network-inspector/step-4-explore-the-filecash-network-inspector-app',
                     '/build/examples/network-inspector/step-5-shut-down-the-application',
                     '/build/examples/network-inspector/summary'
                   ]
@@ -230,12 +231,12 @@ module.exports = {
           ],
 
           '/': [
-            '/about-filecoin/what-is-filecoin',
-            '/about-filecoin/how-filecoin-works',
-            '/about-filecoin/why-filecoin',
-            '/about-filecoin/ipfs-and-filecoin',
-            '/about-filecoin/filecoin-compared-to',
-            '/about-filecoin/faq',
+            '/about-filecash/what-is-filecash',
+            '/about-filecash/how-filecash-works',
+            '/about-filecash/why-filecash',
+            '/about-filecash/ipfs-and-filecash',
+            '/about-filecash/filecash-compared-to',
+            '/about-filecash/faq',
             {
               title: 'Project',
               path: '/project/',

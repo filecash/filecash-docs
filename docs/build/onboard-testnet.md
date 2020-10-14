@@ -1,6 +1,6 @@
 ---
 title: 'Onboard to testnet'
-description: "This guide shows you how start storing your application's data on the Filecoin testnet."
+description: "This guide shows you how start storing your application's data on the Filecash testnet."
 breadcrumb: 'Onboard to testnet'
 ---
 
@@ -8,17 +8,17 @@ breadcrumb: 'Onboard to testnet'
 
 {{ $frontmatter.description }}
 
-For small-scale testing of your application, you can use smaller-scale Filecoin networks, such as a [local network](local-devnet.md) or the [Filecoin Nerpa network](https://networks.filecoin.io/#nerpa). We currently recommend _all developers_ use the Filecoin testnet in order to receive direct support from the Protocol Labs team and to be eligible for upcoming data storage rewards.
+For small-scale testing of your application, you can use smaller-scale Filecash networks, such as a [local network](local-devnet.md) or the [Filecash Nerpa network](../networks/README.md#nerpa-devnet). We currently recommend _all developers_ use the Filecash testnet in order to receive direct support from the Protocol Labs team and to be eligible for upcoming data storage rewards.
 
-The Filecoin testnet is a network with parameters and activity levels _as close as possible_ to the expected state of the Filecoin mainnet once it launches. There are some important things developers should know before building on the testnet.
+The Filecash testnet is a network with parameters and activity levels _as close as possible_ to the expected state of the Filecash mainnet once it launches. There are some important things developers should know before building on the testnet.
 
 ::: tip
-**We recommend that most developers use a hosted service** like [hosted Powergates or Textile Buckets](README.md#filecoin-backed-storage-providers) to store application data to the Filecoin testnet. These services are by far the fastest and friendliest way to get your application working with Filecoin. If you are using either a hosted [Powergate](powergate.md) or Textile Buckets, you don’t need to worry about any of the information in this guide. Textile’s services are soon to be deployed against the Filecoin testnet. If you are using hosted Textile products, your application will also be deployed on the Filecoin testnet.
+**We recommend that most developers use a hosted service** like [hosted Powergates or Textile Buckets](README.md#filecoin-backed-storage-providers) to store application data to the Filecash testnet. These services are by far the fastest and friendliest way to get your application working with Filecash. If you are using either a hosted [Powergate](powergate.md) or Textile Buckets, you don’t need to worry about any of the information in this guide. Textile’s services are soon to be deployed against the Filecash testnet. If you are using hosted Textile products, your application will also be deployed on the Filecash testnet.
 
 If you would like accelerated access to a hosted Powergate instance, please fill out [this form](https://blog.textile.io/hosted-powergate). We will work with the Textile team to get you access to a hosted Powergate asap.
 :::
 
-**If you are managing your own Filecoin nodes, whether your own lotus node or Powergate node, please read on for these important details.**
+**If you are managing your own Filecash nodes, whether your own lotus node or Powergate node, please read on for these important details.**
 
 ## Join the testnet
 
@@ -41,12 +41,12 @@ While the current installation instructions say to use a machine with 8GB memory
 Our teammates have also had success running `m5ad.2xlarge` instances on AWS. In order to significantly boost the initial chain sync speed, make sure to keep `~/.lotus` on a fast drive (ideally a SSD -- nvme is best!) and consider temporarily applying the patch listed in [this issue comment](https://github.com/filecoin-project/lotus/issues/3263#issue-684587473).
 
 :::tip
-Make sure you start your Lotus daemon using the latest Filecoin chain state export as explain in the [chain sync section](../get-started/lotus/installation.md#chain-sync)
+Make sure you start your Lotus daemon using the latest Filecash chain state export as explain in the [chain sync section](../get-started/lotus/installation.md#chain-sync)
 :::
 
 ### (2) Use the chain snapshot and wait for the chain to be fully synced
 
-Make sure you start your Lotus daemon using the latest Filecoin chain state export as explain in the [chain sync section](../get-started/lotus/installation.md#chain-sync).
+Make sure you start your Lotus daemon using the latest Filecash chain state export as explain in the [chain sync section](../get-started/lotus/installation.md#chain-sync).
 
 Wait until the syncing process completes.
 
@@ -68,9 +68,9 @@ lotus wallet balance
 
 You will not see any funds in your testnet wallet until your node is fully synced, which may take several days depending on how you started chain sync. If you are syncing from a snapshot, it should take less than 1 day for the balance to show up. Once you have more than 0 FIL in your testnet wallet, you can proceed to the next step.
 
-### (6) Make deals with Filecoin miners
+### (6) Make deals with Filecash miners
 
-You can now start [making deals to store your data](../store/lotus/store-data.md). To do this you will need to find a miner willing to store your data. One Filecoin community member maintains a list of miners on the testnet who are currently accepting storage deals:
+You can now start [making deals to store your data](../store/lotus/store-data.md). To do this you will need to find a miner willing to store your data. One Filecash community member maintains a list of miners on the testnet who are currently accepting storage deals:
 
 - [List of miners](https://github.com/jimpick/workshop-client-testnet/blob/spacerace/src/annotations-spacerace.js)
 - In this list, `active` means a deal got to the `active` state, i.e. it was successfully sealed into a sector that appeared on chain.
@@ -79,11 +79,11 @@ You can now start [making deals to store your data](../store/lotus/store-data.md
 
 ## Support and troubleshooting
 
-If you run into any issues with any of these steps, please join the [Filecoin Slack](http://filecoin.io/slack) and leave a message in the [#fil-storage-dev channel](https://app.slack.com/client/TEHTVS1L6/CRK2LKYHW). Our team will respond asap in the channel.
+If you run into any issues with any of these steps, please join the [Filecash Slack](http://filecoin.io/slack) and leave a message in the [#fil-storage-dev channel](https://app.slack.com/client/TEHTVS1L6/CRK2LKYHW). Our team will respond asap in the channel.
 
-In general, the best way to get support from the Filecoin team is:
+In general, the best way to get support from the Filecash team is:
 
-- Join [Filecoin Slack](http://filecoin.io/slack) and post a message in the [#fil-storage-dev channel](https://app.slack.com/client/TEHTVS1L6/CRK2LKYHW).
+- Join [Filecash Slack](http://filecoin.io/slack) and post a message in the [#fil-storage-dev channel](https://app.slack.com/client/TEHTVS1L6/CRK2LKYHW).
 - _If you haven’t received a message within 24 hours_, please tag `@pooja` directly in your message thread.
 - If the issue persists or cannot be solved by the support team, please [create an issue in the lotus repo](https://github.com/filecoin-project/lotus/issues/new). Include reproducible steps and any log outputs in the issue itself so we can help debug.
 

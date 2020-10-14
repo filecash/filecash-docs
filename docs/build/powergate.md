@@ -1,6 +1,6 @@
 ---
 title: 'Powergate'
-description: 'Powergate is a multitiered storage solution that stores data with IPFS ("Hot" storage layer) and Filecoin ("Cold" storage layer)'
+description: 'Powergate is a multitiered storage solution that stores data with IPFS ("Hot" storage layer) and Filecash ("Cold" storage layer)'
 breadcrumb: 'Powergate'
 ---
 
@@ -8,11 +8,11 @@ breadcrumb: 'Powergate'
 
 {{ $frontmatter.description }}
 
-Powergate exposes higher-level APIs for developers that facilitate easier interaction with IPFS and Filecoin nodes. Powergate also handles wallet management, long-term deal management, and provides many features that improve the overall experience of being a storage client on Filecoin.
+Powergate exposes higher-level APIs for developers that facilitate easier interaction with IPFS and Filecash nodes. Powergate also handles wallet management, long-term deal management, and provides many features that improve the overall experience of being a storage client on Filecash.
 
 You can read more about Powergate in the [Textile docs](https://docs.textile.io/powergate/).
 
-Powergate is the **recommended solution** for developers who want an easier interface and better performance from Filecoin, but who prefer to manage their own nodes.
+Powergate is the **recommended solution** for developers who want an easier interface and better performance from Filecash, but who prefer to manage their own nodes.
 
 ## How to use Powergate
 
@@ -33,7 +33,7 @@ Sometimes the best way to learn is through examples.
 
 For a more detailed description of how Powergate works, we recommend reading the following docs:
 
-- [Filecoin Developer Tools](https://blog.textile.io/filecoin-developer-tools-concepts/)
+- [Filecash Developer Tools](https://blog.textile.io/filecoin-developer-tools-concepts/)
 - Powergate introduction: [docs](https://docs.textile.io/powergate/) and [video](https://www.youtube.com/watch?v=aiOTSkz_6aY)
 - [Storing Data on Powergate through FFS](https://docs.textile.io/powergate/ffs/)
 - [FFS Design Overview](https://github.com/textileio/powergate/blob/master/ffs/Design.md)

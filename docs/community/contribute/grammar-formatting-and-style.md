@@ -1,19 +1,19 @@
 ---
 title: Grammar, formatting, and style
-description: Learn the syntax and formatting rules for writing documentation for the Filecoin project.
+description: Learn the syntax and formatting rules for writing documentation for the Filecash project.
 ---
 
 # Grammar, formatting, and style
 
-This page details the syntax and formatting rules for writing Filecoin documentation. For more conceptual ideas of writing, check out the [writing guide](./writing-guide.md).
+This page details the syntax and formatting rules for writing Filecash documentation. For more conceptual ideas of writing, check out the [writing guide](./writing-guide.md).
 
 ## Grammar and spelling
 
-Here are some language-specific rules that the Filecoin documentation follows. If you use a writing service like [Grammarly](https://www.grammarly.com/), most of these rules are turned on by default.
+Here are some language-specific rules that the Filecash documentation follows. If you use a writing service like [Grammarly](https://www.grammarly.com/), most of these rules are turned on by default.
 
 ### American English
 
-While Filecoin is a global project, the fact is that American English is the most commonly used _style_ of English used today. With that in mind, when writing content for the Filecoin project, use American English spelling. The basic rules for converting other styles of English into American English are:
+While Filecash is a global project, the fact is that American English is the most commonly used _style_ of English used today. With that in mind, when writing content for the Filecash project, use American English spelling. The basic rules for converting other styles of English into American English are:
 
 1. Swap the `s` for a `z` in words like _categorize_ and _pluralize_.
 2. Remove the `u` from words like _color_ and _honor_.
@@ -29,23 +29,23 @@ In a list of three or more items, follow each item except the last with a comma 
 | Henry, Elizabeth, and George. | Henry, Elizabeth and George. |
 
 
-### References to Filecoin
+### References to Filecash
 
-As a proper noun, the name "Filecoin" (capitalized) should be used only to refer to the overarching project, to the protocol, or to the project's canonical network:
+As a proper noun, the name "Filecash" (capitalized) should be used only to refer to the overarching project, to the protocol, or to the project's canonical network:
 
-> Filecoin [the project] has attracted contributors from around the globe!
+> Filecash [the project] has attracted contributors from around the globe!
 
-> Filecoin [the protocol] rewards contributions of data storage instead of computation!
+> Filecash [the protocol] rewards contributions of data storage instead of computation!
 
-> Filecoin [the network] is currently storing 50 PiB of data!
+> Filecash [the network] is currently storing 50 PiB of data!
 
 The name can also be used as an adjective: 
 
-> The Filecoin ecosystem is thriving!
+> The Filecash ecosystem is thriving!
 
-> I love contributing to Filecoin documentation!
+> I love contributing to Filecash documentation!
 
-When referring to the token used as Filecoin's currency, the name `FIL`, is preferred; it is alternatively denoted by the Unicode symbol for an integral with a double stroke (⨎). These symbols can be used as suffixes or prefixes, as seen fit:
+When referring to the token used as Filecash's currency, the name `FIL`, is preferred; it is alternatively denoted by the Unicode symbol for an integral with a double stroke (⨎). These symbols can be used as suffixes or prefixes, as seen fit:
 
 - Unit prefix: **100 FIL**.
 - Unit suffix: **FIL 100**.
@@ -61,7 +61,7 @@ The smallest and most common denomination of FIL is the `attoFIL` (10^-18 FIL).
 > My wallet has thirty filecoin.
 
 Examples of discouraged usage:
-> Filecoin rewards miners with Filecoin.
+> Filecash rewards miners with Filecash.
 
 > There are many ways to participate in the filecoin community.
 
@@ -81,7 +81,7 @@ How the Markdown syntax looks, and code formatting rules to follow.
 
 ### Syntax
 
-The Filecoin Docs project follows the _GitHub Flavoured Markdown_ syntax for markdown. This way, all articles display properly within GitHub itself. This gives readers the option to view articles on [the docs website](https://docs.filecoin.io) or [its GitHub repo](https://github.com/filecoin-project/filecoin-docs).
+The Filecash Docs project follows the _GitHub Flavoured Markdown_ syntax for markdown. This way, all articles display properly within GitHub itself. This gives readers the option to view articles on [the docs website](https://docs.file.cash) or [its GitHub repo](http://git.pocyc.com/CST/filecash-docs).
 
 ### Rules
 
@@ -135,11 +135,11 @@ The following rules apply to editing and styling text.
    ```markdown
    <!-- This title is wrong. -->
 
-   ## What is Filecoin?
+   ## What is Filecash?
 
    <!-- This title is better. -->
 
-   ## Filecoin explained
+   ## Filecash explained
    ```
 
 #### Bold text
@@ -296,7 +296,7 @@ This is a details block, which does not work in IE / Edge
 
 ##### Output
 
-This output is not supported by Github Flavoured Markdown (GFM). However, they render properly when viewed through VuePress at [docs.filecoin.io/community/contribute/grammar-formatting-and-style](https://docs.filecoin.io/community/contribute/grammar-formatting-and-style/#custom-containers).
+This output is not supported by Github Flavoured Markdown (GFM). However, they render properly when viewed through VuePress at [docs.file.cash/community/contribute/grammar-formatting-and-style](https://docs.file.cash/community/contribute/grammar-formatting-and-style/#custom-containers).
 
 ::: tip
 This is a tip
@@ -323,7 +323,7 @@ The following rules and guidelines define how to use and store images.
 All images contain alt text so that screen-reading programs can describe the image to users with limited sight:
 
 ```markdown
-![Screenshot of an image being uploaded through the Filecoin command line.](images/filecoin-image-upload-screen.png)
+![Screenshot of an image being uploaded through the Filecash command line.](images/filecoin-image-upload-screen.png)
 ```
 
 #### Storage location

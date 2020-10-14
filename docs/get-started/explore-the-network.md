@@ -1,6 +1,6 @@
 ---
 title: Explore the network
-description: There are several ways to explore and get insights from the Filecoin network.
+description: There are several ways to explore and get insights from the Filecash network.
 breadcrumb: 'Explore the Network'
 ---
 
@@ -14,11 +14,11 @@ breadcrumb: 'Explore the Network'
 
 | Name                                                 | Screenshot                                                                |
 | ---------------------------------------------------- | ------------------------------------------------------------------------- |
-| [Filscan](https://filscan.io/)                       | <img src="./images/explore-the-filecoin-chain/filscan.png" width="400">   |
-| [Filscout](https://filscout.io/)                     | <img src="./images/explore-the-filecoin-chain/filscout.png" width="400">  |
-| [Filfox](https://filfox.io/)                         | <img src="./images/explore-the-filecoin-chain/filfox.png" width="400">    |
-| [Filplorer](https://filplorer.com/)                  | <img src="./images/explore-the-filecoin-chain/filplorer.png" width="400"> |
-| [1475 Explorer](https://1475ipfs.com/#/blockBrowser) | <img src="./images/explore-the-filecoin-chain/1475ipfs.png" width="400">  |
+| [Filscan](https://filscan.io/)                       | <img src="./images/explore-the-filecash-chain/filscan.png" width="400">   |
+| [Filscout](https://filscout.io/)                     | <img src="./images/explore-the-filecash-chain/filscout.png" width="400">  |
+| [Filfox](https://filfox.io/)                         | <img src="./images/explore-the-filecash-chain/filfox.png" width="400">    |
+| [Filplorer](https://filplorer.com/)                  | <img src="./images/explore-the-filecash-chain/filplorer.png" width="400"> |
+| [1475 Explorer](https://1475ipfs.com/#/blockBrowser) | <img src="./images/explore-the-filecash-chain/1475ipfs.png" width="400">  |
 
 ## Lotus
 

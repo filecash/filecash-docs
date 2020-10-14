@@ -9,10 +9,10 @@ breadcrumb: 'API client libraries'
 {{ $frontmatter.description }}
 
 ::: callout
-**Have you written API bindings for any Filecoin implementation or product?** Please edit this page (see bottom) and add them here!
+**Have you written API bindings for any Filecash implementation or product?** Please edit this page (see bottom) and add them here!
 :::
 
-API clients take care of the low-level details of making requests and handling responses and let you focus on writing code specific to your project. They can also translate between different programming languages. These Filecoin API clients are currently available:
+API clients take care of the low-level details of making requests and handling responses and let you focus on writing code specific to your project. They can also translate between different programming languages. These Filecash API clients are currently available:
 
 - [js-lotus-client](https://github.com/filecoin-shipyard/js-lotus-client) (Javascript, RPC, compatible with lotus)
 - [filecoin-ruby](https://github.com/subvisual/filecoin-ruby) (Ruby, RPC, compatible with lotus)

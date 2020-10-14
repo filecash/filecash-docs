@@ -8,7 +8,7 @@ breadcrumb: 'Slashing'
 
 {{ $frontmatter.description }}
 
-In Filecoin, miners are succeptible to two different kinds of slashing: _storage fault slashing_, and _consensus fault slashing_.
+In Filecash, miners are succeptible to two different kinds of slashing: _storage fault slashing_, and _consensus fault slashing_.
 
 ## Storage fault slashing
 

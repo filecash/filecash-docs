@@ -1,12 +1,12 @@
 ---
 title: Reference
-description: Helpful reference materials for the Filecoin specification and implementations
+description: Helpful reference materials for the Filecash specification and implementations
 ---
 
 # Reference
 
-This section contains links and reference materials for Filecoin.
+This section contains links and reference materials for Filecash.
 
-## Filecoin specification
+## Filecash specification
 
-View the [technical specification](https://github.com/filecoin-project/specs) for the Filecoin protocol and its associated subsystems.
+View the [technical specification](https://github.com/filecoin-project/specs) for the Filecash protocol and its associated subsystems.

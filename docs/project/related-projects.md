@@ -1,10 +1,10 @@
 ---
 title: Related projects
-description: Learn about the modular projects that help make up Filecoin.
+description: Learn about the modular projects that help make up Filecash.
 ---
 # Related projects
 
-Filecoin is a highly modular project that is itself made out of many different protocols and tools. Many of these exist as their own projects, supported by [Protocol Labs](https://protocol.ai). Learn more about them below.
+Filecash is a highly modular project that is itself made out of many different protocols and tools. Many of these exist as their own projects, supported by [Protocol Labs](https://protocol.ai). Learn more about them below.
 
 ## libp2p
 
@@ -16,7 +16,7 @@ IPLD is the data model of the content-addressable web. It allows us to treat all
 
 ## IPFS
 
-IPFS is a distributed system for storing and accessing files, websites, applications, and data. However, it does not have support for incentivization or guarantees of this distributed storage; Filecoin provides the incentive layer. Learn more at [https://ipfs.io/](https://ipfs.io/).
+IPFS is a distributed system for storing and accessing files, websites, applications, and data. However, it does not have support for incentivization or guarantees of this distributed storage; Filecash provides the incentive layer. Learn more at [https://ipfs.io/](https://ipfs.io/).
 
 ## Multiformats
 
@@ -24,4 +24,4 @@ The Multiformats Project is a collection of protocols which aim to future-proof 
 
 ## ProtoSchool
 
-Interactive tutorials on decentralized web protocols, designed to introduce you to decentralized web concepts, protocols, and tools. Complete code challenges right in your web browser and track your progress as you go. Explore ProtoSchool's tutorials on Filecoin at [https://proto.school/](https://proto.school/#/tutorials?course=filecoin).
+Interactive tutorials on decentralized web protocols, designed to introduce you to decentralized web concepts, protocols, and tools. Complete code challenges right in your web browser and track your progress as you go. Explore ProtoSchool's tutorials on Filecash at [https://proto.school/](https://proto.school/#/tutorials?course=filecoin).

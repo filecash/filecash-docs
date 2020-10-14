@@ -9,8 +9,8 @@ This section provides an overview of the pages in the Powergate Pinning Service 
 
 - **Profile**: Displays the user wallet data.
 - **Network**: Displays the network health, connected peers, miners, and their associated addresses.
-- **Pin**: Allows a user to choose a file, customise Filecoin File System (FFS) configuration, upload the file to FFS, and monitor the status of the file.
-- **Gallery**: Displays a list of all the files uploaded by the user and lets you download the files from the IPFS node or Filecoin node.
+- **Pin**: Allows a user to choose a file, customise Filecash File System (FFS) configuration, upload the file to FFS, and monitor the status of the file.
+- **Gallery**: Displays a list of all the files uploaded by the user and lets you download the files from the IPFS node or Filecash node.
 
 ## Step 4a - Import the powergate client and database functions
 
@@ -429,16 +429,16 @@ The `pow.ffs.newAddr` function uses `pow.ffs.newAddr` function which takes 3 par
       </div>
     ))
   ) : (
-    <img src={FilecoinGIF} />
+    <img src={FilecashGIF} />
   )}
 </Fragment>
 ```
 
-## Step 4e - Adding data to IPFS and Filecoin
+## Step 4e - Adding data to IPFS and Filecash
 
 The Pin page shows how you can add data to your FFS and provides the data storage control features that are exposed through Powergate.
 
-![Fetching data from IPFS and Filecoin](./images/pin.png)
+![Fetching data from IPFS and Filecash](./images/pin.png)
 
 Look at:
 
@@ -477,11 +477,11 @@ The `defaultConfig` has 3 sections:
 
 - `hot`: Controls IPFS data storage, or “hot” storage that is quickly accessible but not stored for the long term. Powergate considers data “hot” if it is stored on IPFS Network nodes that are not connected to the FIlecoin network. The following parameters can be set in the `hot` section:
   - `enabled`: If set to true, the data is stored on IPFS short-term storage.
-  - `allowUnfreeze`: If set to true, FFS will automatically retrieve the data from the Filecoin network if the data is found on the IPFS network.
-  - `addTimeout`: As we mentioned that IPFS Network is considered as "hot" storage, every time the network seeks data, it first searches IPFS. The timeout (in seconds) defines the amount of time for that initial search. If the network doesn’t don't find the data in the IPFS network before the timeout ends, it fetches the data from Filecoin.
-- `cold`: Controls Filecoin data storage, that is the long-term “cold” storage. Filecoin is considered reliable for long-term cold storage of data because on Filecoin, individuals who want to store data pay for the data storage. In IPFS, data is not reliably stored because the nodes do not make a promise or receive compensation for the storage of data long term.
-- `enabled`: If set to true, the data is stored on the Filecoin network.
-- `repFactor`: The number of replicas to store on the Filecoin network.
+  - `allowUnfreeze`: If set to true, FFS will automatically retrieve the data from the Filecash network if the data is found on the IPFS network.
+  - `addTimeout`: As we mentioned that IPFS Network is considered as "hot" storage, every time the network seeks data, it first searches IPFS. The timeout (in seconds) defines the amount of time for that initial search. If the network doesn’t don't find the data in the IPFS network before the timeout ends, it fetches the data from Filecash.
+- `cold`: Controls Filecash data storage, that is the long-term “cold” storage. Filecash is considered reliable for long-term cold storage of data because on Filecash, individuals who want to store data pay for the data storage. In IPFS, data is not reliably stored because the nodes do not make a promise or receive compensation for the storage of data long term.
+- `enabled`: If set to true, the data is stored on the Filecash network.
+- `repFactor`: The number of replicas to store on the Filecash network.
 - `dealMinDuration`: Minimum duration (in secs) of a deal, during which the user’s data will be stored by a miner.
 - `excludedMinersList`: Array of miner addresses that you **do not want** to do a storage deal with.
 - `trustedMinersList`: Array of miner addresses who are preferred for storage deals.
@@ -491,7 +491,7 @@ The `defaultConfig` has 3 sections:
   - `threshold`: Number of epochs before deal expiration, the deal renewal should fire.
 - `addr`: The address of the wallet debited for the storage deal.
 - `maxPrice`: Maximum price you are willing to pay for a deal in attoFIL (1 FIL = 10^18 attoFIL).
-- `repairable`: If set to true, when the configuration conditions are not met in the IPFS and Filecoin network, Powergate attempts to self-repair to satisfy the config conditions.
+- `repairable`: If set to true, when the configuration conditions are not met in the IPFS and Filecash network, Powergate attempts to self-repair to satisfy the config conditions.
 
 ::: tip
 This configuration can be set globally so that every deal by default uses this config. You can also pass this config (with different values) for a specific CID so that you can have different storage conditions for different data.
@@ -508,8 +508,8 @@ The file then needs to be converted from `Blob` to `Uint8Array`, to be passed in
     const file = document.getElementById('fileToUpload').files[0]
     const enablePublicIPFS = document.getElementById('enablePublicIPFS').checked
     const allowUnfreeze = document.getElementById('allowUnfreeze').checked
-    const enableFilecoinStorage = document.getElementById(
-      'enableFilecoinStorage'
+    const enableFilecashStorage = document.getElementById(
+      'enableFilecashStorage'
     ).checked
     const renew = document.getElementById('renew').checked
     const repairable = document.getElementById('repairable').checked
@@ -550,7 +550,7 @@ The file then needs to be converted from `Blob` to `Uint8Array`, to be passed in
             }
           },
           cold: {
-            enabled: enableFilecoinStorage,
+            enabled: enableFilecashStorage,
             filecoin: {
               repFactor: parseInt(replicationFactor),
               dealMinDuration: parseInt(minDealDuration),
@@ -689,7 +689,7 @@ export const addFileToFFS = payload => async dispatch => {
     </div>
   ) : (
     <p>
-      No Recent Deals. Upload something to Filecoin Network to see sweet-sweet
+      No Recent Deals. Upload something to Filecash Network to see sweet-sweet
       deals :)
     </p>
   )}
@@ -701,13 +701,13 @@ export const addFileToFFS = payload => async dispatch => {
 The Gallery page displays the files stored. The page has 2 sections:
 
 - **Get data from IPFS:** In this section, you fetch the data from the "hot" IPFS Network. This is suitable for most of the purposes (as long as the data is available on IPFS Network) as it's quickly accessible. This tutorial uses the HTTP Gateway of the IPFS node to fetch the data from IPFS Network through port 8080 that you exposed in the docker-compose file.
-- **Get Data from Filecoin File System (FFS):** In this section, you fetch the data from the "cold" Filecoin Network. This is a suitable way when the data is not available on the IPFS network.
+- **Get Data from Filecash File System (FFS):** In this section, you fetch the data from the "cold" Filecash Network. This is a suitable way when the data is not available on the IPFS network.
 
 ::: tip
-Fetching data from Filecoin network has some fees (in FIL) associated. Retrieval fees are deducted from the associated wallet address.
+Fetching data from Filecash network has some fees (in FIL) associated. Retrieval fees are deducted from the associated wallet address.
 :::
 
-![Fetching data from IPFS and Filecoin](./images/gallery.png)
+![Fetching data from IPFS and Filecash](./images/gallery.png)
 
 Look at:
 
@@ -753,7 +753,7 @@ The files can be accessed using the IPFS HTTP Gateway exposed on port `8080`.
       </h6>
     )
   ) : (
-    <img src={FilecoinGIF} />
+    <img src={FilecashGIF} />
   )}
 </Fragment>
 ```
@@ -782,7 +782,7 @@ export const getDataFromFFS = payload => async dispatch => {
 
 ```jsx
 <Fragment>
-  <h3>Get Data from Filecoin File System (FFS)</h3>
+  <h3>Get Data from Filecash File System (FFS)</h3>
   <input type="text" id="getFromFFS" placeholder="Add CID here" />
   <button
     className="btn btn-primary mb-2"
@@ -798,7 +798,7 @@ export const getDataFromFFS = payload => async dispatch => {
       {ffsFiles.map((file, index) => (
         <p key={index}>
           <a href={file.url} target="_blank">
-            Download {file.cid} from Filecoin
+            Download {file.cid} from Filecash
           </a>
           <br />
           <br />

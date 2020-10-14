@@ -1,6 +1,6 @@
 ---
 title: 'Lotus: switch networks'
-description: There may be times, particularly when testing, where you wish to switch to a different Filecoin network or need to reconnect to a testing network after a network reset. This guide will show you how to switch between different Filecoin networks with Lotus.
+description: There may be times, particularly when testing, where you wish to switch to a different Filecash network or need to reconnect to a testing network after a network reset. This guide will show you how to switch between different Filecash networks with Lotus.
 breadcrumb: Switch networks
 ---
 

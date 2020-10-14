@@ -94,7 +94,7 @@ Once all the dependencies are installed, you can build and install the Lotus sui
    export FFI_BUILD_FROM_SOURCE=1
    ```
 
-   See the [Native Filecoin FFI section](#native-filecoin-ffi) for more details about this process.
+   See the [Native Filecash FFI section](#native-filecoin-ffi) for more details about this process.
 
    If you are building Lotus 0.7.1 and have an Intel or AMD processor without the AXD instruction set, add the `CGO_CFLAGS` environment variable:
 
@@ -118,7 +118,7 @@ Once all the dependencies are installed, you can build and install the Lotus sui
 
 1. You should now have Lotus installed. You can now [start the Lotus daemon](#start-the-lotus-daemon).
 
-#### Native Filecoin FFI
+#### Native Filecash FFI
 
 Some newer CPU architectures like AMD's Zen and Intel's Ice Lake, have support for SHA extensions. Having these extensions enabled significantly speeds up your Lotus node. To make full use of your processor's capabilities, make sure you set the following variables **before building from source**:
 
@@ -245,7 +245,7 @@ lotus sync wait
 ```
 
 :::tip
-Syncing the Filecoin chain can be a very slow process, and the state size is quite large. Unless you need the full historical chain state, we suggest importing a pruned chain snapshot when the Lotus daemon starts:
+Syncing the Filecash chain can be a very slow process, and the state size is quite large. Unless you need the full historical chain state, we suggest importing a pruned chain snapshot when the Lotus daemon starts:
 
 ```sh
 # The snapshot size is about 4GiB
@@ -281,7 +281,7 @@ lotus --help
 lotus client --help
 ```
 
-For example, after your Lotus daemon has been running for a few minutes, use `lotus` to check the number of other peers that it is connected to in the Filecoin network:
+For example, after your Lotus daemon has been running for a few minutes, use `lotus` to check the number of other peers that it is connected to in the Filecash network:
 
 ```sh
 lotus net peers

@@ -8,7 +8,7 @@
         <ul>
           <li>
             <a
-              href="https://github.com/filecoin-project/filecoin-docs/issues/new?assignees=&labels=Content+Improvement&template=content-request.md&title=%5BCONTENT+REQUEST%5D+%28add+your+title+here%21%29"
+              href="http://git.pocyc.com/CST/filecash-docs/issues/new?assignees=&labels=Content+Improvement&template=content-request.md&title=%5BCONTENT+REQUEST%5D+%28add+your+title+here%21%29"
               target="_blank"
               >Suggest new content</a
             >
@@ -24,7 +24,7 @@
         <ul>
           <li>
             <a
-              href="https://github.com/filecoin-project/filecoin-docs/issues/new?assignees=&labels=Content+Improvement&template=documentation-issue.md&title=%5BDOCS+ISSUE%5D+%28add+your+title+here%21%29"
+              href="http://git.pocyc.com/CST/filecash-docs/issues/new?assignees=&labels=Content+Improvement&template=documentation-issue.md&title=%5BDOCS+ISSUE%5D+%28add+your+title+here%21%29"
               target="_blank"
               >Give general feedback</a
             >
